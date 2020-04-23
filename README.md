@@ -43,6 +43,13 @@ const Item = props => <Grid item {...props} />;
 - Breakpoints can be added to HOC as well
 - HOC are a great tool for removing excess syntac from JSX
 - Only the specify the `xs` breakpoint property if you want a fixed number of columns. You can combine different widths in a fixed way (i.e. full-width header and footer with smaller content)
-- Column direction
 - Use the `direction` property of a `Grid` container to change the direction flow for items
 - Use the `Hidden` component to hide elements at a given breakpoint
+
+### App Bars
+- Create a fixed position `AppBar` using the `fixed` value of the `position` property
+- Use the `toolbar mix-in` styles to add a top margin so that content isn't hidden behind the `AppBar` component
+- Hide the `AppBar` component while the user is scrolling down by creating a listener on the `scroll` event on the `window` object. 
+- Create a Toolbar HOC to improve code reuse
+- The `MenuItem` component accepts a `component` property that is used to render the `Link` component. Pass properties to the `Link` component using the `to` property
+
