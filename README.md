@@ -32,7 +32,7 @@ those found in the book and follow the same chronological order.
 
 ## Notes
 
-### Grids
+### Grid
 - Apply breakpoints with `Grid` components
 - Change the `justify` property value to tell the `Grid` container how to fill empty spaces
 - Create higher-order Container and Item components from Grid components for improved readability
@@ -46,10 +46,26 @@ const Item = props => <Grid item {...props} />;
 - Use the `direction` property of a `Grid` container to change the direction flow for items
 - Use the `Hidden` component to hide elements at a given breakpoint
 
-### App Bars
+### App Bar
 - Create a fixed position `AppBar` using the `fixed` value of the `position` property
 - Use the `toolbar mix-in` styles to add a top margin so that content isn't hidden behind the `AppBar` component
 - Hide the `AppBar` component while the user is scrolling down by creating a listener on the `scroll` event on the `window` object. 
 - Create a Toolbar HOC to improve code reuse
 - The `MenuItem` component accepts a `component` property that is used to render the `Link` component. Pass properties to the `Link` component using the `to` property
+
+### Drawer
+There are three types of `Drawer` components
+  1. **Temporary**: a transient drawer that closes when an action is taken
+  2. **Persistent**: a drawer that can be opened and stays open until explicitly closed
+  3. **Permanent**: a drawer that is always visible
+- Control the `Drawer` component type using the `variant` property
+- The `Drawer` component takes an `open` property, which displays the drawer when true
+- Render Drawer items based on the state of your component
+- Navigate between pages using links for `Drawer` items. Check the current path to highlight the respective link
+- Divide your drawer into sections if you have lots of items
+- Add a `Button` component to the `ListSubheader` component so that it's clickable
+- Use the `Collapse` component to hide children `ListItems`
+- A common plaace to put a button that toggles the visibility of `Drawer` components is the `AppBar` component at the top of every page in your app
+
+
 
