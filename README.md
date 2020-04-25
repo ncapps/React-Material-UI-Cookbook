@@ -74,3 +74,12 @@ There are three types of `Drawer` components
 - Rendering tabs based on state
 - Create abstactions for tab content to simplify markup
 - Tab navigation with routes
+
+### Expansion Panels - Group content into panel sections
+- Applications are divided into sections so that users can mentally organize the information they're looking at. The `ExpansionPanel` component is one way that you can create these sections
+- Headers in `ExpansionPanel` components can be formatted. Typically, the Typography component is used to render text within an expansion panel header
+- Change the `variant` property of the `Typography` component to update the style
+- Scrollable panel content by setting a fixed height, updating the flexDirection to column, and setting overflow to 'auto'
+- Lazy loading panel content. You can wait for the user to expand the panel before making an API call to render the content in the `ExpansionPanelDetails` component
+
+
