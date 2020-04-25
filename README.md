@@ -32,7 +32,7 @@ those found in the book and follow the same chronological order.
 
 ## Notes
 
-### Grid
+### Grids - Placing components on the page
 - Apply breakpoints with `Grid` components
 - Change the `justify` property value to tell the `Grid` container how to fill empty spaces
 - Create higher-order Container and Item components from Grid components for improved readability
@@ -46,14 +46,14 @@ const Item = props => <Grid item {...props} />;
 - Use the `direction` property of a `Grid` container to change the direction flow for items
 - Use the `Hidden` component to hide elements at a given breakpoint
 
-### App Bar
+### App Bars - the top level of every page
 - Create a fixed position `AppBar` using the `fixed` value of the `position` property
 - Use the `toolbar mix-in` styles to add a top margin so that content isn't hidden behind the `AppBar` component
 - Hide the `AppBar` component while the user is scrolling down by creating a listener on the `scroll` event on the `window` object. 
 - Create a Toolbar HOC to improve code reuse
 - The `MenuItem` component accepts a `component` property that is used to render the `Link` component. Pass properties to the `Link` component using the `to` property
 
-### Drawer
+### Drawers - a place for navigation controls
 There are three types of `Drawer` components
   1. **Temporary**: a transient drawer that closes when an action is taken
   2. **Persistent**: a drawer that can be opened and stays open until explicitly closed
@@ -67,5 +67,10 @@ There are three types of `Drawer` components
 - Use the `Collapse` component to hide children `ListItems`
 - A common plaace to put a button that toggles the visibility of `Drawer` components is the `AppBar` component at the top of every page in your app
 
-
-
+### Tabs - Grouping content into tab sections
+- `AppBar` components can be used with the `Tabs` component. The App Bar provids a container for your tab buttons
+- The `Tabs` component has two properties to help you align your tab buttons. `centered` to center the tabs and `fullWidth` to spread out the tabs
+- You can use the `compose()` function from `recompose`. This functions makes your code more readable when you're applying several higher order functions that decorate your component
+- Rendering tabs based on state
+- Create abstactions for tab content to simplify markup
+- Tab navigation with routes
