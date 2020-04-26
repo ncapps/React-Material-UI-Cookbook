@@ -103,3 +103,12 @@ There are three types of `Drawer` components
 - Add a search feature to your tables when you need the ability to search for relevant information
 - Select rows using a `TableRow` property
 - Table rows often represent an object that you can perform actions on. You can include common actions directly in each table row
+
+### Chapter 8. Cards - Display Detailed Information
+- Use multiple cards to organize information in a way that helps the user understand what they're looking at
+- The main content of a `Card` component is where information concerning the subject is placed. The `CardContent` component is a child of `Card`
+- Use the a `CardHeader` component to let it handle the layout styles of the header and to keep the markup within your `Card` semantic
+- `CardActions` components can be used by `Card` components to display actions that users can take on the subject
+- Cards have built-in capabilities for displaying media like images and videos
+- You can make your cards expandable and reveal additional content when a use clicks on an `expand` button
+- If you're trying to fit too much content into a `Card`, making the card expandable may be masking a problem. Instead, consider a different approach like creating a new page for the subject
