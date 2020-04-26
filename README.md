@@ -82,7 +82,7 @@ There are three types of `Drawer` components
 - Scrollable panel content by setting a fixed height, updating the flexDirection to column, and setting overflow to 'auto'
 - Lazy loading panel content. You can wait for the user to expand the panel before making an API call to render the content in the `ExpansionPanelDetails` component
 
-### Chapter 6. List - Display simple collection data
+### Chapter 6. Lists - Display simple collection data
 - The `List` component is used to render data collections. Lists are like simple tables. 
 - A collection, usually an array of objects, is mapped to `ListItem` components.
 - `ListItem` components support icons. 
@@ -96,3 +96,10 @@ There are three types of `Drawer` components
 - The `ListItemSecondaryAction` component is used as a container for any controls in your list item.
 - Large lists can cause performance issues. The solution is to virtualize lists using `react-virtualized`
 - In order to provide predictable performance characteristics, you only want to render itms that are actually visible to the user as they scroll through the list
+
+### Chapter 7. Tables - Display Complex Collection Data
+- Use the `Table` component to display tabular data
+- You can implement sortable columns in a `Table` component
+- Add a search feature to your tables when you need the ability to search for relevant information
+- Select rows using a `TableRow` property
+- Table rows often represent an object that you can perform actions on. You can include common actions directly in each table row
