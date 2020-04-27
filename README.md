@@ -125,3 +125,13 @@ There are three types of `Drawer` components
 - Use error boundaries to selectively display components that have not thrown an error and not render components that have thrown an error
 - You can embed the next course of action for the user in a snackbar. It could be useful to add a button to close the snackbar or require the user to explicitly acknowledge the message by having to close it manually
 - To deal with more than one snackbar message created in a short period of time, you can create queue for all snackbar messages, so that only the most recent notification is displayed, and so that the transitions are handled properly
+
+### Chapter 10. Buttons - Initiating Actions
+- Buttons are used to initiate actions
+- The `Button` component exists as three variants `Text, Outlined, Contained`
+- Contol the emphasis of a `Button` with the `color` and `disabled` properties
+- `Button` components can be used as links to other locations in your app
+- A `Fab` component (floating action button) displays the primary screen action in a prominent way
+- The common case for floating action buttons is to show the user a round button with an icon, positioned in the bottom right of the screen. The position of the `Fab` is `fixed`
+- You can create a button that's just an icon using the `IconButton` component. Icon buttons are useful when you have restricted screen real estate or when you want to visually show the toggled state of something
+- Butons support tee shirt-style sizing. You can use one of the predefined sizes.
