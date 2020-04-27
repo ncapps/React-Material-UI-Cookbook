@@ -112,3 +112,16 @@ There are three types of `Drawer` components
 - Cards have built-in capabilities for displaying media like images and videos
 - You can make your cards expandable and reveal additional content when a use clicks on an `expand` button
 - If you're trying to fit too much content into a `Card`, making the card expandable may be masking a problem. Instead, consider a different approach like creating a new page for the subject
+
+### Chapter 9. Snackbars - Temporary Messages
+- A `Snackbar` component is used to display messages for users. The messages are brief and don't interfere with the main application components
+- Text is the most common form of a `Snackbar` message content. The `message` property accepts a string value. The snackbar is visible when the `open` property is set to `true`
+- `Snackbar` is an HOC. You can pass properties to the `SnackbarContent`, `Paper`, and `Typography` components via the `ContentProps` property
+- Snackbars are typically displayed in response to something. You can use state to control the visibility of the snackbar.
+- The typical pattern with snackbar messages is to have them appear briefly and are hidden automatically after a short duration
+- You can control the transitions used by the `Snackbar` components when it is displayed and hidden. The `Snackbar` component directly supports transition customization through properties.
+- Snackbar components have an `anchorOrigin` property that allows you to change the position of the snackbar when it's displayed.
+- You can use `Snackbar` components to display captured errors and style them so that errors are visually distinctive from normal messages
+- Use error boundaries to selectively display components that have not thrown an error and not render components that have thrown an error
+- You can embed the next course of action for the user in a snackbar. It could be useful to add a button to close the snackbar or require the user to explicitly acknowledge the message by having to close it manually
+- To deal with more than one snackbar message created in a short period of time, you can create queue for all snackbar messages, so that only the most recent notification is displayed, and so that the transitions are handled properly
