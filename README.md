@@ -135,3 +135,14 @@ There are three types of `Drawer` components
 - The common case for floating action buttons is to show the user a round button with an icon, positioned in the bottom right of the screen. The position of the `Fab` is `fixed`
 - You can create a button that's just an icon using the `IconButton` component. Icon buttons are useful when you have restricted screen real estate or when you want to visually show the toggled state of something
 - Butons support tee shirt-style sizing. You can use one of the predefined sizes.
+
+### Chapter 11. Text - Collecting Text Input
+- The `TextField` component can be controlled by the React component, `state`
+- You need to provide the `TextField` component with aan `onChange` event handler that updates the state for the input
+- The `TextField` component is a convenient abstraction that builds on other Material-UI components such as `FormControl` and `Input`
+- To help the user understand what to type, you can utilize `label`, `placeholder` and `helperText` properties of the `TextField` component
+- When user input mistakes are made, text input fields need to be marked as being in an error state
+- The `TextField` support password fields by changing the `type` property
+- The `multiline` property provides the ability to enter text values that span multiple lines
+- `Input` components have properties that allow you to customize the way that they look and behave. You can adorn inputs with other components to extend the functionality of basic text inputs in a way that helps the user
+- You can add masking capabilities that help guide the user toward providing the correct format
