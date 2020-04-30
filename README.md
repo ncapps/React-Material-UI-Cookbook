@@ -146,3 +146,22 @@ There are three types of `Drawer` components
 - The `multiline` property provides the ability to enter text values that span multiple lines
 - `Input` components have properties that allow you to customize the way that they look and behave. You can adorn inputs with other components to extend the functionality of basic text inputs in a way that helps the user
 - You can add masking capabilities that help guide the user toward providing the correct format
+
+### Chapter 12. Autocomplete and Chips - Text Input Suggestions for Multiple Items
+- Web applications typically provide autocomplete input fields when there are too many choices to select from
+- `Chips` are used when the user needs to be able to make multiple selections
+- Building an Autocomplete component
+- Selecting Autocomplete suggestions
+- API-driven Autocomplete
+- Highlighting search results
+- Standalone chip input
+
+### Chapter 13. Selection - Make Selections from Choices
+- Checkboxes often provide the user with a group of related options that can be check or uncheck. The `Checkbox` component provides basic functionality.
+- It's helpful to create a HOC for creating checkbox groups
+- You can change the icon that's used for both the check and unchecked state of the `Checkbox` component
+- Radios are used when only one value should be selected. 
+- There are a number of radio button aspects that can be customized to make unique radio button groups
+- A `Switch` is very similar to a checkbox. A switch has more emphasis on toggling on/off action. User's might feel more accustomed to a switch in a mobile environment
+- Controlling selects with state
+- Selecting multiple items
