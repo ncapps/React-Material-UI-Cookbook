@@ -190,3 +190,13 @@ There are three types of `Drawer` components
 - Menu scrolling options. You can place a maximum height on the menu and have it scroll vertically
 - Using menu transitions. By default, `Menu` used the `Grow` transition component
 - Customizing menu items. You can change regular menu items that have `onClick` handlers into something more elaborate. For example, you can create a menu with links to other routes in the app
+
+### Chapter 17. Typograhpy - Control Font Look and Feel
+- The `Typography` component is used to render text on the screen.
+- `Typography` can be used as a standalone component, but it's also used internally by other Material-UI components that render text
+- The value passed to the `variant` property determines the styles that are applied to the text
+- The styles for each of these variants are defined by the theme
+- Use the `inherit` variant value if you want the `Typography` component to inherit the variant styles from its parent
+- The `Typography` component has a `color` property
+- Use the `align` property of the `Typography` component to align text horizontally
+- Wrapping text with the `noWrap` property and breakpoints
