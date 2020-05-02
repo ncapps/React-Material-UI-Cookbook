@@ -209,3 +209,16 @@ There are three types of `Drawer` components
 - The `lazy()` function takes a function that returns a call to `import()`. It returns a `lazy` component.
 - Material-UI icons have themes that can be applied to them. This is different from the general Material-UI themes that apply styles to all components. Icon themes are specifically for icons.
 - The `mdi-material-ui` package provides a large number of icons available for use
+
+### Chapter 19. Themes - Centralize the Look and Feel of Your App
+- Material-UI applications can be themed with a high degree of flexibility, and without the need to sacrifice the principles of Material Design
+- Your focus is on the color intentions of the theme while Material-UI uses these color intentions to compute other colors where necessary
+- Intentions include:
+  1. Primary: represent primary interface elements
+  2. Secondary: represent secondary interface elements
+  3. Error: represent interface elements that the user should be made aware of
+- The `MuiThemeProvider` component is how the `theme` is applied to Material-UI components. Any components that depend on theme styles need to be children of this component.
+- The color palette of a theme takes a `type` property value that can be either light or dark. Themes are light by default.
+- The preferred `typeface` for Material-UI themes is **Roboto**. You can also install new typefaces as an alternative.
+- By nesting `MuiThemeProvider` components, you can compose multiple themes that handle different aspects of a theme into a single theme
+- Themes can override styles that are specific to component types, like buttons or drawers. This is useful when you need to apply a style change to every instance of the component in the app.
