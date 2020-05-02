@@ -200,3 +200,12 @@ There are three types of `Drawer` components
 - The `Typography` component has a `color` property
 - Use the `align` property of the `Typography` component to align text horizontally
 - Wrapping text with the `noWrap` property and breakpoints
+
+### Chapter 18. Icons - Enhance Icons to Match your Look and Feel
+- Icons play an important role in the usability of your application - they provide a means to quickly scan the screen for meaning, instead of having to read text all of the time
+- Icon components accept a `color` property that takes a named theme color
+- The `fontSize` property of icon components accepts a string value that represents a predetermined icon size. The `inherit` value sets the icon to whatever `fortSize` its parent component is set to
+- Material-UI can load icons lazily/dynamically
+- The `lazy()` function takes a function that returns a call to `import()`. It returns a `lazy` component.
+- Material-UI icons have themes that can be applied to them. This is different from the general Material-UI themes that apply styles to all components. Icon themes are specifically for icons.
+- The `mdi-material-ui` package provides a large number of icons available for use
