@@ -173,3 +173,12 @@ There are three types of `Drawer` components
 - It's common to set the initial date and time values to the current date and time
 - You can combine date and time in a single `TextField` component
 - Integrating other date and time packages for a consistent material-ui experience when using date and time pickers
+
+### Chapter 15. Dialogs - Modal Screens for User Interactions
+- Material-UI has a dialog component that provides a modal display that doesn't disrupt the current screen content
+- Collecting form input
+- Confirming actions
+- Displaying alerts
+- API integration
+- Creating fullscreen dialogs
+- Scrolling dialog content
