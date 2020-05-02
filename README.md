@@ -222,3 +222,14 @@ There are three types of `Drawer` components
 - The preferred `typeface` for Material-UI themes is **Roboto**. You can also install new typefaces as an alternative.
 - By nesting `MuiThemeProvider` components, you can compose multiple themes that handle different aspects of a theme into a single theme
 - Themes can override styles that are specific to component types, like buttons or drawers. This is useful when you need to apply a style change to every instance of the component in the app.
+
+### Chapter 20. Styles - Applying Styles to Components
+- Material-UI provides several ways to apply custom styles to components as a whole, or to specific parts of components
+- In some cases, you need the ability to style individual components without changing the theme. 
+- Material-UI uses JavaScript Style Sheets (JSS) to style its components
+- The `withStyles()` function is a HOC that takes a style object as an argument. the function that it returns takes the component to style as an argument.
+- You can build a `usStyles()` hook using the `makeStyles()` function
+- Material-UI components have a CSS API that is specific to the component. You can target specific aspect of the component that need to be changed.
+- Use the `jss` extend plugin to extend one style object with another
+- The `styled()` HOC function that emulates styled components.
+- You can also use inline CSS styles or import CSS modules and apply those styles using the Material-UI system
