@@ -182,3 +182,11 @@ There are three types of `Drawer` components
 - API integration
 - Creating fullscreen dialogs
 - Scrolling dialog content
+
+### Chapter 16. Menus - Display Actions that Pop Out
+- The `Menu` component enables you to organize commands for a given screen
+- Think of menus as a combination of lists and buttons
+- Composing menus with state
+- Menu scrolling options. You can place a maximum height on the menu and have it scroll vertically
+- Using menu transitions. By default, `Menu` used the `Grow` transition component
+- Customizing menu items. You can change regular menu items that have `onClick` handlers into something more elaborate. For example, you can create a menu with links to other routes in the app
