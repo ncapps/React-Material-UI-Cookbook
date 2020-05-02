@@ -165,3 +165,11 @@ There are three types of `Drawer` components
 - A `Switch` is very similar to a checkbox. A switch has more emphasis on toggling on/off action. User's might feel more accustomed to a switch in a mobile environment
 - Controlling selects with state
 - Selecting multiple items
+
+### Chapter 14. Pickers - Select Dates and Times
+- Users need an intuitive way to select date and time values
+- Leverage the `TextField` component to use a date picker. Set the `type` property to `date`
+- Time pickers are also derived from the `TextField` component
+- It's common to set the initial date and time values to the current date and time
+- You can combine date and time in a single `TextField` component
+- Integrating other date and time packages for a consistent material-ui experience when using date and time pickers
