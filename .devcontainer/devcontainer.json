@@ -13,14 +13,14 @@
   ],
   // Use 'forwardPorts' to make a list of ports inside the container available locally.
   "forwardPorts": [
-    3000
+    9009
   ],
   // Use 'postCreateCommand' to run commands after the container is created.
   // "postCreateCommand": "yarn install",
   // Uncomment to connect as a non-root user. See https://aka.ms/vscode-remote/containers/non-root.
   "remoteUser": "node",
   "mounts": [
-    "source=time-zones-node_modules,target=${containerWorkspaceFolder}/node_modules,type=volume"
+    "source=material-ui-cookbook-node-modules,target=${containerWorkspaceFolder}/node_modules,type=volume"
   ],
   "postCreateCommand": "sudo chown node node_modules && npm install && bash .devcontainer/scripts/configure-git.sh"
 }

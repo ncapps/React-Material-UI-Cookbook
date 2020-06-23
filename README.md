@@ -23,7 +23,7 @@ To run the examples, make sure that you're in the `Material-UI-Cookbook` directo
 and run Storybook:
 
 ```
-npm run storybook
+npm run storybook --ci
 ```
 
 This will open Storybook in a new browser tab. The navigation is separated into
